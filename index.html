@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health card signing key</title>
+<style>
+  :root { --bg:#fbfbf9; --fg:#1d1d1f; --muted:#6e6e73; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#f2f2f2; --muted:#a1a1a6; } }
+  body { margin:0; padding:40px 16px; background:var(--bg); color:var(--fg);
+         font:16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:600px; margin:0 auto; }
+  h1 { font-size:22px; margin:0 0 12px; }
+  p { margin:0 0 14px; }
+  code { font-size:14px; }
+  .muted { color:var(--muted); }
+</style></head>
+<body><main>
+  <h1>Health card signing key</h1>
+  <p>This site publishes the public key for SMART Health Cards that I make from my own
+     paper medical records, so the Health app on my phone can check that a card hasn't
+     changed since I signed it.</p>
+  <p>These cards are personal copies. A lab, clinic or pharmacy did not issue them,
+     and they are not official records.</p>
+  <p class="muted">Key set: <code><a href=".well-known/jwks.json">.well-known/jwks.json</a></code>. No health data is stored here.</p>
+</main></body></html>
